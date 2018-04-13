@@ -14,3 +14,7 @@ end
 def add_or_remove_cash__remove(total, money)
    return total  [:admin][:total_cash]-=(money)
 end
+
+def pets_sold(pets)
+  return pets [:admin][:pets_sold]
+end
