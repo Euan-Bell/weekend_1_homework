@@ -18,3 +18,7 @@ end
 def pets_sold(pets)
   return pets [:admin][:pets_sold]
 end
+
+def increase_pets_sold(shop, pets)
+   return shop [:admin][:pets_sold]+=(pets)
+end
