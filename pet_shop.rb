@@ -41,3 +41,14 @@ def pets_by_breed(shop, breed)
   end
 return total
 end
+# Clueless how to do the above function
+
+def pets_by_breed(shop, breed)
+  i = 0
+  total = Array.new
+  for pet in shop[:pets]
+    total.push(pet) if shop[:pets][i][:breed] == breed
+    i +=1
+  end
+return total
+end
