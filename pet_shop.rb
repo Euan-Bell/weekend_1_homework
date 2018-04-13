@@ -8,11 +8,11 @@ def total_cash(total)
 end
 
 def add_or_remove_cash(total, money)
-   return total  [:admin][:total_cash]+=(money)
+  return total  [:admin][:total_cash]+=(money)
 end
 
 def add_or_remove_cash__remove(total, money)
-   return total  [:admin][:total_cash]-=(money)
+  return total  [:admin][:total_cash]-=(money)
 end
 
 def pets_sold(pets)
@@ -20,7 +20,7 @@ def pets_sold(pets)
 end
 
 def increase_pets_sold(shop, pets)
-   return shop [:admin][:pets_sold]+=(pets)
+  return shop [:admin][:pets_sold]+=(pets)
 end
 
 def stock_count(stock)
@@ -39,7 +39,7 @@ def pets_by_breed(shop, breed)
     total.push(pet) if shop[:pets][i][:breed] == breed
     i +=1
   end
-return total
+  return total
 end
 # Clueless how to do the above function
 
@@ -50,5 +50,24 @@ def pets_by_breed(shop, breed)
     total.push(pet) if shop[:pets][i][:breed] == breed
     i +=1
   end
-return total
+  return total
+end
+
+# def find_pet_by_name( shop, name )
+#   for name in shop[:pets][:name]
+#     return name
+#   end
+# end
+
+
+
+# def test_customer_cash(cash)
+# return cash [:cash]
+
+def remove_customer_cash(customer, money)
+  return customer[:cash]-=(money)
+end
+
+def add_or_remove_cash__remove(total, money)
+  return total  [:admin][:total_cash]-=(money)
 end
