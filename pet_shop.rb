@@ -6,3 +6,9 @@ end
 def total_cash(total)
   return total [:admin][:total_cash]
 end
+
+def add_or_remove_cash(total, money)
+
+   return total  [:admin][:total_cash]+=(money)
+
+end
